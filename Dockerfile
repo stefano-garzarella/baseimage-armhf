@@ -17,7 +17,7 @@ COPY init/ /etc/my_init.d/
 RUN	apt-get update && \
 	apt-get -y upgrade && \
 	apt-get -y dist-upgrade && \
-	apt-get clean && \
+	apt-get -y clean && \
 	apt-get -y autoremove
 
 RUN chmod +x /etc/my_init.d/*.sh
