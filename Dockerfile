@@ -19,7 +19,7 @@ RUN	apt-get update && \
 	apt-get -y dist-upgrade && \
 	apt-get -y clean && \
 	apt-get -y autoremove && \
-	rm -rf /tmp/* /var/tmp/*
+	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN chmod +x /etc/my_init.d/*.sh
 
