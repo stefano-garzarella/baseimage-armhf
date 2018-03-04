@@ -1,4 +1,4 @@
-FROM phusion/baseimage:0.9.22
+FROM phusion/baseimage:0.10.0
 
 LABEL maintainer="dlandon"
 
@@ -18,7 +18,8 @@ RUN	apt-get update && \
 	apt-get -y upgrade && \
 	apt-get -y dist-upgrade && \
 	apt-get -y clean && \
-	apt-get -y autoremove
+	apt-get -y autoremove && \
+	rm -rf /tmp/* /var/tmp/*
 
 RUN chmod +x /etc/my_init.d/*.sh
 
