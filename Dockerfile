@@ -1,6 +1,6 @@
-FROM phusion/baseimage:0.10.0
+FROM sgarzarella/baseimage-phusion-armhf:0.10.0
 
-LABEL maintainer="dlandon"
+MAINTAINER Stefano <stefano.garzarella@gmail.com>
 
 ENV	DEBCONF_NONINTERACTIVE_SEEN="true" \
 	DEBIAN_FRONTEND="noninteractive" \
