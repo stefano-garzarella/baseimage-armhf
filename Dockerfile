@@ -4,7 +4,7 @@ LABEL maintainer="dlandon"
 
 ENV	DEBCONF_NONINTERACTIVE_SEEN="true" \
 	DEBIAN_FRONTEND="noninteractive" \
-	DISABLESSH="true" \
+	DISABLE_SSH="true" \
 	HOME="/root" \
 	LC_ALL="C.UTF-8" \
 	LANG="en_US.UTF-8" \
