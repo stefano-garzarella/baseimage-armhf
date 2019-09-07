@@ -15,7 +15,6 @@ ENV	DEBCONF_NONINTERACTIVE_SEEN="true" \
 COPY init/ /etc/my_init.d/
 
 RUN	apt-get update && \
-	apt-get -y upgrade -o Dpkg::Options::="--force-confold" && \
 	apt-get -y dist-upgrade -o Dpkg::Options::="--force-confold" && \
 	apt-get -y clean && \
 	apt-get -y autoremove && \
