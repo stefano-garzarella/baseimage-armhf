@@ -7,8 +7,7 @@
 apt-get update
 
 # Perform Upgrade
-apt-get -y upgrade
-apt-get -y dist-upgrade
+apt-get -y upgrade -o Dpkg::Options::="--force-confold"
 
 # Clean + purge old/obsoleted packages
 apt-get -y autoremove
